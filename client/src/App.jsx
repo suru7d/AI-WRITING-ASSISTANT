@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import LoginPage from "./components/Login";
 import PrivateRoute from "./components/PrivateRoute";
 
+// Force redeploy to fix 404 error
+
 export default function App() {
   return (
     <BrowserRouter>
