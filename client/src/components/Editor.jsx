@@ -4,7 +4,7 @@ import Login from "./Login";
 import { FaSpellCheck, FaSyncAlt, FaCheck, FaPencilAlt } from "react-icons/fa";
 import { SiGrammarly } from "react-icons/si";
 import { usePrivy } from "@privy-io/react-auth";
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 const Editor = () => {
   const { getAccessToken } = usePrivy();

@@ -14,6 +14,10 @@ app.use(cors()); //prevent cors error
 app.use(express.json()); // help to parse incoming json data
 
 //Routes
+app.get("/", (req, res) => {
+  res.json({ message: "AI Writing Assistant API is running!" });
+});
+
 app.use("/api/analyze", analyzeRoute);
 app.use("/api/grammarcheck", grammarCheckRoute);
 app.use("/api/spellcheck", spellCheckRoute);
